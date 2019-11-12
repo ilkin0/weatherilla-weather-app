@@ -2,7 +2,9 @@ const path = require('path')
 const express = require('express')
 const hbs = require("hbs")
 const request = require('request')
+
 const app = express()
+const port = process.env.PORT || 4000
 
 const getGeo = require('./utilities/geo')
 const getWeather = require('./utilities/forecast')
@@ -113,7 +115,7 @@ app.get('*', (req, res) => {
 
 
 
-app.listen(4000, () => {
-    console.log('Server is running on port 4000');
+app.listen(port, () => {
+    console.log('Server is running on port ' + port);
 
 })
