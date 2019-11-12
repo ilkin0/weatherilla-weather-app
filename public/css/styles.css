@@ -1,0 +1,276 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Helvetica', sans-serif;
+}
+
+body {
+    background-color: #e4f9f5;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-area {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    color: #e3e7f1;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+header {
+    color: #e3e7f1;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 65px;
+    margin-bottom: 15px;
+}
+
+header a {
+    color: #cbf1f5;
+    margin-right: 15px;
+    text-decoration: none;
+    transition: ease-in-out 0.15s;
+    display: inline-block;
+
+}
+
+header a:hover {
+    color: #11999e;
+    transform: scale(1.25);
+    outline: none;
+}
+
+
+input {
+    border: 1px solid #11999e;
+    padding: 5px;
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #11999e;
+    background: #11999e;
+    color: white;
+    padding: 5px;
+    transition: ease-in-out 0.2s;
+    -webkit-border-radius: 5;
+    -moz-border-radius: 5;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: white;
+    color: #11999e;
+}
+
+.container {
+    max-width: 90%;
+    width: 1200px;
+    background-color: #30e3ca;
+    box-shadow: 0 5px 10px black;
+    border-radius: 5px;
+}
+
+.darksky-logo {
+    position: absolute;
+    bottom: 20px;
+    right: -38rem;
+    color: #333;
+    font-size: 1rem;
+}
+
+.header {
+    background-color: #222;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.container-about {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+}
+
+.header-about {
+    background-color: #222;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.main-area-about {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #30e3ca;
+    width: 100%;
+    height: 87vh;
+    min-height: 100%;
+    min-width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+.icon-container {
+    position: relative;
+    top: 70px;
+    padding: 20px;
+    margin-bottom: 5px;
+    background-color: white;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
+#message-1 {
+    color: #393e46;
+    font-family: 'Jomolhari', serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#message-2 {
+    font-family: 'Jomolhari', serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.p-about {
+    text-align: center;
+    font-family: 'Jomolhari', serif;
+    font-size: 2rem;
+}
+
+.img-about {
+    position: relative;
+    top: 95px;
+    padding: 20px;
+    margin-bottom: 5px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.body-404 {
+    background-color: #42dee1;
+}
+
+
+@media only screen and (max-width: 414px) {
+    h1 {
+        font-size: 5.5vh;
+        margin-top: 50px;
+    }
+
+
+    .main-area-about {
+        width: 100%;
+        height: 75vh;
+    }
+
+    .p-about {
+        text-align: center;
+        font-family: 'Jomolhari', serif;
+        font-size: 1rem;
+    }
+
+
+    .darksky-logo {
+        left: 50%;
+        margin-top: 85px;
+    }
+
+    .main-area-404 {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .cat-gif {
+        width: 350px;
+        height: 480px;
+    }
+
+    .p-404 {
+        text-align: center;
+        font-family: 'Jomolhari', serif;
+        font-size: 1rem;
+    }
+
+}
+
+
+@media only screen and (max-width:375px) {
+    h1 {
+        font-size: 5vh;
+        margin-top: 50px;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    .main-area-about {
+        width: 100%;
+        height: 90vh;
+    }
+
+    .p-about {
+        text-align: center;
+        font-family: 'Jomolhari', serif;
+        font-size: 1.5rem;
+    }
+
+    .header-about {
+        height: 150px;
+    }
+
+    .darksky-logo {
+        left: 28%;
+    }
+
+    .main-area-404 {
+        width: 100%;
+        height: 90vh;
+    }
+
+    .cat-gif {
+        width: 350px;
+        height: 480px;
+    }
+
+    .p-404 {
+        text-align: center;
+        font-family: 'Jomolhari', serif;
+        font-size: 1rem;
+    }
+
+
+}
